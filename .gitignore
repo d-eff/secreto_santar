@@ -1,4 +1,4 @@
-secret.js
-elves.js
 data/
+config/
+node_modules/
 .DS_Store

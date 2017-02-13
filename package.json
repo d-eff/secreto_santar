@@ -1,0 +1,22 @@
+{
+  "name": "shitty_secret_santa",
+  "version": "0.0.1",
+  "description": "SSS backend",
+  "main": "app/server.js",
+  "scripts": {
+    "start": "node app/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d-eff/secreto_santar.git"
+  },
+  "author": "d-eff",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/d-eff/secreto_santar/issues"
+  },
+  "homepage": "https://github.com/d-eff/secreto_santar#readme",
+  "dependencies": {
+    "express": "^4.14.1"
+  }
+}
