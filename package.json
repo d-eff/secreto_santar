@@ -4,7 +4,8 @@
   "description": "SSS backend",
   "main": "app/server.js",
   "scripts": {
-    "start": "node app/server.js"
+    "start": "node app/server.js",
+    "dev": "nodemon app/server.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,8 @@
   "homepage": "https://github.com/d-eff/secreto_santar#readme",
   "dependencies": {
     "express": "^4.14.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
   }
 }
