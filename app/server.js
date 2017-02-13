@@ -4,6 +4,7 @@ const config = require('../config/config.js');
 const app = express();
 
 MongoClient.connect(config.mongoURL, function(err, db) {
+  if (err) return console.log(err);
   console.log("connected to db");
 
   db.close();
