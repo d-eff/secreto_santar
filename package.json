@@ -5,6 +5,7 @@
   "main": "app/server.js",
   "scripts": {
     "start": "node app/server.js",
+    "mongo-dev": "mongod -f config/mongo-local.conf --quiet &",
     "dev": "nodemon app/server.js"
   },
   "repository": {
