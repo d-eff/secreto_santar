@@ -20,7 +20,7 @@ exports.get = function() {
 
 exports.close = function(cb) {
     if (state.db) {
-        state.db.close(function(err, result) {
+        state.db.close((err, result) => {
             state.db = null;
             done(err);
         });

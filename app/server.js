@@ -6,7 +6,7 @@ const app = express();
 app.use(express.static('web'));
 app.use(require('./routes.js'));
 
-db.connect(function(err) {
+db.connect((err) => {
   if (err) { 
     process.exit(1); 
   } else {
