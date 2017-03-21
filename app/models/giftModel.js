@@ -1,7 +1,7 @@
 const mongoose = require('mongoose'),
       Schema = mongoose.Schema;
 
-var gift = new Schema({
+const gift = new Schema({
     name: String,
     year: Number,
     year_id: Schema.Types.ObjectId,
