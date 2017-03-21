@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(require('./routes.js'));
-app.use(require('./routes/elfRoutes.js'));
+app.use(require('./routes/playerRoutes.js'));
 app.use(require('./routes/giftRoutes.js'));
 app.use(require('./routes/yearRoutes.js'));
 

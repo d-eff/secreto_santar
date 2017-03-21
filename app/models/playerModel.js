@@ -1,7 +1,7 @@
 const mongoose = require('mongoose'),
       Schema = mongoose.Schema;
 
-const elf = new Schema({
+const player = new Schema({
     name: String,
     email: String,
     gifts_given: [Schema.Types.ObjectId],
@@ -10,4 +10,4 @@ const elf = new Schema({
     badges: [Schema.Types.ObjectId]
 });
 
-module.exports = mongoose.model('Elf', elf, 'Players');
+module.exports = mongoose.model('Player', player, 'Players');

@@ -14,4 +14,19 @@ router.get('/api/years', (req, res) => {
   });
 });
 
+router.post('/api/year', (req, res) => {
+  new Year({
+    year: req.body.year,
+    gifts: [],
+    players: req.body.players
+  }).save((err) => {
+    if (err) {
+      console.log(err);
+      req.sendStatus(500);
+    } else {
+      req.sendStatus(200);
+    }
+  });
+});
+
 module.exports = router;
