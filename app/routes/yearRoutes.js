@@ -19,6 +19,7 @@ router.post('/api/year', (req, res) => {
     year: req.body.year,
     gifts: [],
     players: req.body.players
+    //add year to each players years array
   }).save((err) => {
     if (err) {
       console.log(err);

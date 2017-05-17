@@ -7,7 +7,8 @@ const player = new Schema({
     gifts_given: [Schema.Types.ObjectId],
     gifts_received: [Schema.Types.ObjectId],
     likes: [String],
-    badges: [Schema.Types.ObjectId]
+    badges: [Schema.Types.ObjectId],
+    years: [Schema.Types.ObjectId]
 });
 
 module.exports = mongoose.model('Player', player, 'Players');

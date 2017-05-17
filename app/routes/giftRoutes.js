@@ -15,7 +15,6 @@ router.get('/api/gifts', (req, res) => {
 });
 
 router.post('/api/gift', (req, res) => {
-  console.log(req.body);
   new Gift({
     name: req.body.name,
     year: req.body.year,
