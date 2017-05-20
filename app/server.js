@@ -3,8 +3,9 @@ const config = require('../config/config.js');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const app = express();
+const path = require('path');
 
-app.use(express.static('web'));
+app.use(express.static(path.resolve(__dirname, 'web')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
