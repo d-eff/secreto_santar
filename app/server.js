@@ -15,6 +15,7 @@ app.use(require('./routes/yearRoutes.js'));
 
 mongoose.connect(config.mongoURL, (err, db) => {
   if (err) { 
+    console.log("app going down on boot. is mongo running?");
     process.exit(1); 
   } else {
     app.listen(3000, () => {

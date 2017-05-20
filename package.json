@@ -6,8 +6,10 @@
   "scripts": {
     "start": "node app/server.js",
     "mongo-dev": "mongod -f config/mongo-local.conf --quiet &",
-    "dev": "nodemon app/server.js",
-    "web": "./node_modules/.bin/webpack --config app/web/webpack.config.js"
+    "dev": "npm run backend-dev & npm run web-watch",
+    "backend-dev": "nodemon app/server.js",
+    "web": "./node_modules/.bin/webpack --config app/web/webpack.config.js",
+    "web-watch": "./node_modules/.bin/webpack --config app/web/webpack.config.js --watch"
   },
   "repository": {
     "type": "git",
