@@ -1,19 +1,15 @@
 <template>
-<div class="message">{{ msg }}</div>
+  <div class="full-width center-content">
+    <h1>Hello World!</h1>
+  </div>
 </template>
-
-<script>
-export default {
-  data () {
-    return {
-      msg: 'Hello from vue-loader!'
-    }
-  }
+<style scoped>
+.full-width {
+  width: 100%;
 }
-</script>
-
-<style>
-.message {
-  color: blue;
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>
